@@ -32,6 +32,9 @@ font-size: 40%;
 img.vis {
 width: 200px;
 }
+span.cem {
+color: #d66;
+}
 </style>
 </head>
 
@@ -40,29 +43,29 @@ width: 200px;
 <div class="slides">
 
 <section>
-<h2>Understanding Knowledge Networks</h2>
+<h2><span class="cem">Understanding Knowledge Networks</span></h2>
 <p>Krishna Mangaladevi, Wouter Beek, <strong>Tobias Kuhn</strong></p>
 <p>International Workshop on Linked Data for Information Extraction (LD4IE) at ISWC<br/>
 Vienna, 2017</p>
 </section>
 
 <section>
-<h3>What is the Structure of the Networks in the Linked Open Data Cloud?</h3>
+<h3>What is the <span class="cem">Structure of the Networks</span> in the Linked Open Data Cloud?</h3>
 <img class="plain stretch" src="img/lod.png"/>
 </section>
 
 <section>
-<h3>Do these networks all look the same?</h3>
+<h3>Do these networks all look <span class="cem">the same</span>?</h3>
 <img class="plain stretch" src="img/penguins.jpg"/>
 </section>
 
 <section>
-<h3>Or is there a Large Diversity of Familiar Forms?</h3>
+<h3>Or is there a Large <span class="cem">Diversity of Familiar Forms</span>?</h3>
 <img class="plain stretch" src="img/fish.jpg"/>
 </section>
 
 <section>
-<h3>Or are they Freak Networks with Highly Unusual Properties?</h3>
+<h3>Or are they <span class="cem">Freak Networks</span> with Highly Unusual Properties?</h3>
 <img class="plain stretch" src="img/freaks.jpg"/>
 </section>
 
@@ -89,7 +92,7 @@ Vienna, 2017</p>
 <img src="img/ll_laundryLine.png" width="200" class="plain">
 </a>
 </p>
-<p><small>Beek &amp; Rietveld & Bazoobandi & Wielemaker & Schlobach. LOD laundromat: A Uniform Way of Publishing Other People’s Dirty Data. ISWC, 2014.</small></p>
+<p><small>Beek &amp; Rietveld & Bazoobandi & Wielemaker & Schlobach. LOD Laundromat: A Uniform Way of Publishing Other People’s Dirty Data. ISWC, 2014</small></p>
 </section>
 
 <section>
@@ -98,14 +101,13 @@ Vienna, 2017</p>
 <p><a href="https://github.com/LODLaundry/Frank" target='_blank'>https://github.com/LODLaundry/Frank</a></p>
 <pre>
 $ frank statements --predicate foaf:name | head -n 5
-
 eurostat:void.rdf#Eurostat foaf:name "Eurostat" .
 author:5ff33...1c4 foaf:name "Dong-Mei Shi" .
 author:d873s...19b foaf:name "Feng-Xia Ma" .
 author:fbbcf...54c foaf:name "Ya-Guang Chen" .
 author:1ec76...f4b foaf:name; "Jian Yu" .
 </pre>
-<p><small>Beek, W. &amp; Rietveld, L.: Frank: The LOD Cloud at your Fingertips. Extended Semantic Web Conference: Dev Workshop (2015).</small></p>
+<p><small>Beek &amp; Rietveld. Frank: The LOD Cloud at your Fingertips. ESWC Dev Workshop, 2015</small></p>
 </section>
 
 <section>
@@ -125,6 +127,11 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 </tbody>
 </table>
 </small>
+</section>
+
+<section>
+<h3>Calling Frank...</h3>
+<code>frank statements -p foaf:knows | grep last-fm | nt2gml > lastfm.gml</code>
 </section>
 
 <section>
