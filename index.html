@@ -35,6 +35,9 @@ width: 200px;
 span.cem {
 color: #d66;
 }
+.white {
+color: #fff;
+}
 </style>
 </head>
 
@@ -69,8 +72,14 @@ Vienna, 2017</p>
 <img class="plain stretch" src="img/freaks.jpg"/>
 </section>
 
+<section data-background-image="img/universe.jpg">
+<h3><span class="white">How Can we Find Out?</span></h3>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<p class="white"><strong><span class="cem">Problem:</span> The Linked Open Data cloud is so big and dispersed...</strong></p>
+</section>
+
 <section>
-<h2><a href="http://lodlaundromat.org">lodlaundromat.org</a></h2>
+<h3>lodlaundromat.org</h3>
 <p>
 <a href="http://lodlaundromat.org/basket/">
 <img src="img/ll_basket.png" width="200" class="plain">
@@ -92,11 +101,17 @@ Vienna, 2017</p>
 <img src="img/ll_laundryLine.png" width="200" class="plain">
 </a>
 </p>
-<p><small>Beek &amp; Rietveld & Bazoobandi & Wielemaker & Schlobach. LOD Laundromat: A Uniform Way of Publishing Other People’s Dirty Data. ISWC, 2014</small></p>
+<p><small><a href="https://doi.org/10.1007/978-3-319-11964-9_14">Beek &amp; Rietveld & Bazoobandi & Wielemaker & Schlobach. LOD Laundromat: A Uniform Way of Publishing Other People’s Dirty Data. ISWC, 2014</a></small></p>
 </section>
 
 <section>
-<h2>Frank</h2>
+<h3>LOD Laundromat Layer Cake</h3>
+<img src="img/llcake.png" class="plain stretch">
+<p><small><a href="https://doi.org/10.1109/MIC.2016.43">Beek &amp; Rietveld &amp; Schlobach &amp; van Harmelen. LOD Laundromat: Why the Semantic Web Needs Centralization (Even If We Don't Like It). IEEE Internet Computing 20 (2) p.78-81, 2016</a></small></p>
+</section>
+
+<section>
+<h3>Frank</h3>
 <img src="img/frank.png" class="plain stretch">
 <p><a href="https://github.com/LODLaundry/Frank" target='_blank'>https://github.com/LODLaundry/Frank</a></p>
 <pre>
@@ -107,7 +122,7 @@ author:d873s...19b foaf:name "Feng-Xia Ma" .
 author:fbbcf...54c foaf:name "Ya-Guang Chen" .
 author:1ec76...f4b foaf:name; "Jian Yu" .
 </pre>
-<p><small>Beek &amp; Rietveld. Frank: The LOD Cloud at your Fingertips. ESWC Dev Workshop, 2015</small></p>
+<p><small><a href="http://laurensrietveld.nl/pdf/Frank_-_The_LOD_Cloud_at_your_Fingertips.pdf">Beek &amp; Rietveld. Frank: The LOD Cloud at your Fingertips. ESWC Dev Workshop, 2015</a></small></p>
 </section>
 
 <section>
@@ -132,6 +147,88 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <section>
 <h3>Calling Frank...</h3>
 <code>frank statements -p foaf:knows | grep last-fm | nt2gml > lastfm.gml</code>
+</section>
+
+<section>
+<h3><em>foaf:knows</em> (Last.fm subset)</h3>
+<img class="plain stretch" src="img/v1.png"/>
+</section>
+
+<section>
+<h3><em>geop:hasBorderWith</em></h3>
+<img class="plain stretch" src="img/v3.png"/>
+</section>
+
+<section>
+<h3><em>osspr:contains</em></h3>
+<img class="plain stretch" src="img/v15.png"/>
+</section>
+
+<section>
+<h3><em>osspr:within</em></h3>
+<img class="plain stretch" src="img/v16.png"/>
+</section>
+
+<section>
+<h3><em>swrc:affiliation</em></h3>
+<img class="plain stretch" src="img/v12.png"/>
+</section>
+
+<section>
+<h3><em>lexinfo:partOfSpeech</em></h3>
+<img class="plain stretch" src="img/v14.png"/>
+</section>
+
+<section>
+<h3><em>gn:parentCountry</em></h3>
+<img class="plain stretch" src="img/v2.png"/>
+</section>
+
+<section>
+<h3><em>tag:associatedTag</em></h3>
+<img class="plain stretch" src="img/v17.png"/>
+</section>
+
+<section>
+<h3>Visualizations</h3>
+<table class="shrink"><tbody>
+<tr>
+<td><em>foaf:knows</em> (Last.fm subset)<br/><img class="plain vis" src="img/v1.png" alt=""/></td>
+<td><em>geop:hasBorderWith</em><br/><img class="plain vis" src="img/v3.png" alt=""/></td>
+<td><em>osspr:contains</em><br/><img class="plain vis" src="img/v15.png" alt=""/></td>
+</tr>
+<tr>
+<td><em>osspr:within</em><br/><img class="plain vis" src="img/v16.png" alt=""/></td>
+<td><em>swrc:affiliation</em><br/><img class="plain vis" src="img/v12.png" alt=""/></td>
+<td><em>lexinfo:partOfSpeech</em><br/><img class="plain vis" src="img/v14.png" alt=""/></td>
+</tr>
+<tr>
+<td><em>gn:parentCountry</em><br/><img class="plain vis" src="img/v2.png" alt=""/></td>
+<td><em>tag:associatedTag</em><br/><img class="plain vis" src="img/v17.png" alt=""/></td>
+<td></td>
+</tr>
+</tbody></table>
+</section>
+
+<section>
+<h3>Visualizations: SKOS</h3>
+<table class="shrink"><tbody>
+<tr>
+<td><em>skos:related</em><br/><img class="plain vis" src="img/v4.png" alt=""/></td>
+<td><em>skos:narrower</em><br/><img class="plain vis" src="img/v5.png" alt=""/></td>
+<td><em>skos:relatedMatch</em><br/><img class="plain vis" src="img/v10.png" alt=""/></td>
+</tr>
+<tr>
+<td><em>skos:broadMatch</em><br/><img class="plain vis" src="img/v7.png" alt=""/></td>
+<td><em>skos:narrowMatch</em><br/><img class="plain vis" src="img/v8.png" alt=""/></td>
+<td><em>skos:closeMatch</em><br/><img class="plain vis" src="img/v9.png" alt=""/></td>
+</tr>
+<tr>
+<td><em>skos:exactMatch</em><br/><img class="plain vis" src="img/v11.png" alt=""/></td>
+<td><em>skos:hasTopConcept</em><br/><img class="plain vis" src="img/v6.png" alt=""/></td>
+<td></td>
+</tr>
+</tbody></table>
 </section>
 
 <section>
@@ -482,105 +579,41 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 </section>
 
 <section>
-<h3><em>foaf:knows</em> (Last.fm subset)</h3>
-<img class="plain stretch" src="img/v1.png"/>
+<h3>Comparison to Other Networks</h3>
+<small>
+<ul>
+<li><span class="cem">AS2001:</span> Internet nodes at the autonomous system (AS) level</li>
+<li><span class="cem">Routers:</span> the router level network of the Internet</li>
+<li><span class="cem">Gnutella:</span> the network structure of Gnutella servers</li>
+<li><span class="cem">WWW:</span> the link network of websites</li>
+<li><span class="cem">Protein:</span> protein-protein interaction network in yeast</li>
+<li><span class="cem">Metabolic:</span> chemicals connected by metabolic reactions</li>
+<li><span class="cem">Math1999:</span> collaboration network of mathematicians via co-authorship</li>
+<li><span class="cem">Actors:</span> the network of actors linked by participation in movies</li>
+<li><span class="cem">E-mail:</span> a network e-mail addresses connected by messages sent</li>
+</ul>
+</small>
+<p><small><a href="https://doi.org/10.1016/j.physrep.2005.10.009">Boccaletti &amp; Latora &amp; Moreno &amp; Chavez &amp; Hwang. Complex networks: Structure and dynamics. Physics reports, 424(4), 175-308, 2006</a></small></p>
 </section>
 
 <section>
-<h3><em>geop:hasBorderWith</em></h3>
-<img class="plain stretch" src="img/v3.png"/>
-</section>
-
-<section>
-<h3><em>osspr:contains</em></h3>
-<img class="plain stretch" src="img/v15.png"/>
-</section>
-
-<section>
-<h3><em>osspr:within</em></h3>
-<img class="plain stretch" src="img/v16.png"/>
-</section>
-
-<section>
-<h3><em>swrc:affiliation</em></h3>
-<img class="plain stretch" src="img/v12.png"/>
-</section>
-
-<section>
-<h3><em>lexinfo:partOfSpeech</em></h3>
-<img class="plain stretch" src="img/v14.png"/>
-</section>
-
-<section>
-<h3><em>gn:parentCountry</em></h3>
-<img class="plain stretch" src="img/v2.png"/>
-</section>
-
-<section>
-<h3><em>tag:associatedTag</em></h3>
-<img class="plain stretch" src="img/v17.png"/>
-</section>
-
-<section>
-<h3>Visualizations</h3>
-<table class="shrink"><tbody>
-<tr>
-<td><em>foaf:knows</em> (Last.fm subset)<br/><img class="plain vis" src="img/v1.png" alt=""/></td>
-<td><em>geop:hasBorderWith</em><br/><img class="plain vis" src="img/v3.png" alt=""/></td>
-<td><em>osspr:contains</em><br/><img class="plain vis" src="img/v15.png" alt=""/></td>
-</tr>
-<tr>
-<td><em>osspr:within</em><br/><img class="plain vis" src="img/v16.png" alt=""/></td>
-<td><em>swrc:affiliation</em><br/><img class="plain vis" src="img/v12.png" alt=""/></td>
-<td><em>lexinfo:partOfSpeech</em><br/><img class="plain vis" src="img/v14.png" alt=""/></td>
-</tr>
-<tr>
-<td><em>gn:parentCountry</em><br/><img class="plain vis" src="img/v2.png" alt=""/></td>
-<td><em>tag:associatedTag</em><br/><img class="plain vis" src="img/v17.png" alt=""/></td>
-<td></td>
-</tr>
-</tbody></table>
-</section>
-
-<section>
-<h3>Visualizations: SKOS</h3>
-<table class="shrink"><tbody>
-<tr>
-<td><em>skos:related</em><br/><img class="plain vis" src="img/v4.png" alt=""/></td>
-<td><em>skos:narrower</em><br/><img class="plain vis" src="img/v5.png" alt=""/></td>
-<td><em>skos:relatedMatch</em><br/><img class="plain vis" src="img/v10.png" alt=""/></td>
-</tr>
-<tr>
-<td><em>skos:broadMatch</em><br/><img class="plain vis" src="img/v7.png" alt=""/></td>
-<td><em>skos:narrowMatch</em><br/><img class="plain vis" src="img/v8.png" alt=""/></td>
-<td><em>skos:closeMatch</em><br/><img class="plain vis" src="img/v9.png" alt=""/></td>
-</tr>
-<tr>
-<td><em>skos:exactMatch</em><br/><img class="plain vis" src="img/v11.png" alt=""/></td>
-<td><em>skos:hasTopConcept</em><br/><img class="plain vis" src="img/v6.png" alt=""/></td>
-<td></td>
-</tr>
-</tbody></table>
-</section>
-
-<section>
-<h3>Comparison of average degree to other networks</h3>
+<h3>Comparison of <span class="cem">average degree</span> to other networks</h3>
 <img class="plain stretch" src="img/degree-comparison.svg"/>
 </section>
 
 <section>
-<h3>Comparison of global clustering coefficient to other networks</h3>
+<h3>Comparison of <span class="cem">global clustering coefficient</span> to other networks</h3>
 <img class="plain stretch" src="img/clustering-comparison.svg"/>
 </section>
 
 <section>
-<h3>Linked Open Data Networks are not Like Penguins or Freaks, ...</h3>
+<h3>Linked Open Data Networks are <span class="cem">not</span> Like Penguins or Freaks, ...</h3>
 <img class="plain" width="40%" src="img/penguin.jpg"/>
 <img class="plain" width="40%" src="img/freak.jpg"/>
 </section>
 
 <section>
-<h3>... but More Like Fish!</h3>
+<h3>... but More Like <span class="cem">Fish</span>!</h3>
 <img class="plain stretch" src="img/nemo.jpg"/>
 <p>(a wide variety of familiar network structures)</p>
 </section>
