@@ -91,9 +91,18 @@ Vienna, 2017</p>
 
 <section>
 <h2>Frank</h2>
-<img src="img/frank.png" class="plain">
+<img src="img/frank.png" class="plain stretch">
 <p><a href="https://github.com/LODLaundry/Frank" target='_blank'>https://github.com/LODLaundry/Frank</a></p>
-<small>[1] Beek, W. &amp; Rietveld, L.: Frank: The LOD Cloud at your Fingertips. Extended Semantic Web Conference: Dev Workshop (2015).</small>
+<pre>
+$ frank statements --predicate foaf:name | head -n 5
+
+eurostat:void.rdf#Eurostat foaf:name "Eurostat" .
+author:5ff33...1c4 foaf:name "Dong-Mei Shi" .
+author:d873s...19b foaf:name "Feng-Xia Ma" .
+author:fbbcf...54c foaf:name "Ya-Guang Chen" .
+author:1ec76...f4b foaf:name; "Jian Yu" .
+</pre>
+<p><small>Beek, W. &amp; Rietveld, L.: Frank: The LOD Cloud at your Fingertips. Extended Semantic Web Conference: Dev Workshop (2015).</small></p>
 </section>
 
 <section>
