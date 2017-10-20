@@ -3,7 +3,8 @@
 <meta charset="utf-8">
 <title>Understanding Knowledge Networks</title>
 <link rel="stylesheet" href="css/reveal.css">
-<link rel="stylesheet" href="css/theme/white.css"><style>
+<link rel="stylesheet" href="css/theme/white.css">
+<style>
 tbody {
 font-size: smaller;
 }
@@ -63,6 +64,36 @@ Vienna, 2017</p>
 <section>
 <h3>Or are they Freak Networks with Highly Unusual Properties?</h3>
 <img class="plain stretch" src="img/freaks.jpg"/>
+</section>
+
+<section>
+<h2><a href="http://lodlaundromat.org">lodlaundromat.org</a></h2>
+<a href="http://lodlaundromat.org/basket/">
+<img src="img/ll_basket.png" width="200" class="plain">
+</a>
+<a href="http://lodlaundromat.org/">
+<img src="img/ll_laundry.png" width="200" class="plain">
+</a>
+<a href="http://lodlaundromat.org/wardrobe/">
+<img src="img/ll_wardrobe.png" width="200" class="plain">
+</a>
+<br>
+<a href="http://lodlaundromat.org/visualizations/">
+<img src="img/ll_analysis.png" width="200" class="plain">
+</a>
+<a href="http://lodlaundromat.org/sparql/?query=PREFIX+llo%3A+%3Chttp%3A%2F%2Flodlaundromat.org%2Fontology%2F%3E%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0ASELECT+DISTINCT+((%3Fdups+%2F+xsd%3Adouble(%3Fdups+%2B+%3Ftriples))+AS+%3FrelDups)+%3Furl%0AWHERE+%7B%0A++%3Fdataset+llo%3Aduplicates+%3Fdups+%3B%0A++++llo%3Atriples+%3Ftriples+%3B%0A++++llo%3Aurl+%3Furl+.%0A++FILTER(%3Ftriples+%3E+0)%0A%7D%0AORDER+BY+DESC(%3FrelDups)+LIMIT+50%0A">
+<img src="img/ll_labels.png" width="200" class="plain">
+</a>
+<a href="http://lodlaundromat.org/about/">
+<img src="img/ll_laundryLine.png" width="200" class="plain">
+</a>
+</section>
+
+<section>
+<h2>Frank</h2>
+<img src="img/frank.png" class="plain">
+<p><a href="https://github.com/LODLaundry/Frank" target='_blank'>https://github.com/LODLaundry/Frank</a></p>
+<small>[1] Beek, W. &amp; Rietveld, L.: Frank: The LOD Cloud at your Fingertips. Extended Semantic Web Conference: Dev Workshop (2015).</small>
 </section>
 
 <section>
