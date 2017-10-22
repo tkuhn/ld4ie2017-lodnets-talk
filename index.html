@@ -38,6 +38,14 @@ color: #d66;
 .white {
 color: #fff;
 }
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+text-transform: none;
+}
 </style>
 </head>
 
@@ -133,8 +141,8 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <tr><th class="narrow"><strong>RDF property</strong></th><th><strong>Description</strong></th></tr>
 <tr><td><em>foaf:knows</em></td><td>"A person known by this person (indicating some level of reciprocated interaction between the parties)."</td></tr>
 <tr><td><em>geop:hasBorderWith</em></td><td>Borders among countries according to the United Nations</td></tr>
-<tr><td><em>osspr:contains</em></td><td>"The interior of one object completely contains the interior of the other. Their boundaries may or may not intersect." (inverse of <i>osspr:within</i>)</td></tr>
-<tr><td><em>osspr:within</em></td><td>"The interior of one object is completely within the interior of the other object. Their boundaries may or may not intersect." (inverse of <i>osspr:contains</i>)</td></tr>
+<tr><td><em>osspr:contains</em></td><td>"The interior of one object completely contains the interior of the other. Their boundaries may or may not intersect."</td></tr>
+<tr><td><em>osspr:within</em></td><td>"The interior of one object is completely within the interior of the other object. Their boundaries may or may not intersect."</td></tr>
 <tr><td><em>swrc:affiliation</em></td><td>Mapping of organizations to affiliated entities (e.g. employees)</td></tr>
 <tr><td><em>lexinfo:partofspeech</em></td><td>"Term used to describe how a particular word is used in a sentence."</td></tr>
 <tr><td><em>gn:parentCountry</em></td><td>"parent country"</td></tr>
@@ -142,6 +150,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 </tbody>
 </table>
 </small>
+<p>And we additionally selected 8 properties from SKOS.</p>
 </section>
 
 <section>
@@ -604,6 +613,21 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <section>
 <h3>Comparison of <span class="cem">global clustering coefficient</span> to other networks</h3>
 <img class="plain stretch" src="img/clustering-comparison.svg"/>
+</section>
+
+<section>
+<h3>What does it Take to Analyze Networks?</h3>
+<p class="fragment">Boccaletti et al. in <strong>2006</strong>:</p>
+<ul class="fragment">
+<li><span class="cem">Number of networks:</span> 9</li>
+<li><span class="cem">Impact:</span> 7674 citations</li>
+</ul>
+<p class="fragment">Our work in <strong>2016</strong>:</p>
+<ul class="fragment">
+<li><span class="cem">Number of networks:</span> 16</li>
+<li><span class="cem">Impact:</span> ?</li>
+</ul>
+<p class="fragment">Network analysis is easy with LOD Laundromat technology!</p>
 </section>
 
 <section>
