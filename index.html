@@ -122,8 +122,10 @@ Vienna, 2017</p>
 <h3>Frank</h3>
 <img src="img/frank.png" class="plain stretch">
 <p><a href="https://github.com/LODLaundry/Frank" target='_blank'>https://github.com/LODLaundry/Frank</a></p>
-<pre>
+<span class="cem"><pre>
 $ frank statements --predicate foaf:name | head -n 5
+</pre></span>
+<pre>
 eurostat:void.rdf#Eurostat foaf:name "Eurostat" .
 author:5ff33...1c4 foaf:name "Dong-Mei Shi" .
 author:d873s...19b foaf:name "Feng-Xia Ma" .
@@ -139,14 +141,14 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <table>
 <tbody>
 <tr><th class="narrow"><strong>RDF property</strong></th><th><strong>Description</strong></th></tr>
-<tr><td><em>foaf:knows</em></td><td>"A person known by this person (indicating some level of reciprocated interaction between the parties)."</td></tr>
-<tr><td><em>geop:hasBorderWith</em></td><td>Borders among countries according to the United Nations</td></tr>
-<tr><td><em>osspr:contains</em></td><td>"The interior of one object completely contains the interior of the other. Their boundaries may or may not intersect."</td></tr>
-<tr><td><em>osspr:within</em></td><td>"The interior of one object is completely within the interior of the other object. Their boundaries may or may not intersect."</td></tr>
-<tr><td><em>swrc:affiliation</em></td><td>Mapping of organizations to affiliated entities (e.g. employees)</td></tr>
-<tr><td><em>lexinfo:partofspeech</em></td><td>"Term used to describe how a particular word is used in a sentence."</td></tr>
-<tr><td><em>gn:parentCountry</em></td><td>"parent country"</td></tr>
-<tr><td><em>tag:associatedTag</em></td><td>"The object is a Tag which plays a role in the subject Tagging."</td></tr>
+<tr><td><span class="cem">foaf:knows</span></td><td>"A person known by this person (indicating some level of reciprocated interaction between the parties)."</td></tr>
+<tr><td><span class="cem">geop:hasBorderWith</span></td><td>Borders among countries according to the United Nations</td></tr>
+<tr><td><span class="cem">osspr:contains</span></td><td>"The interior of one object completely contains the interior of the other. Their boundaries may or may not intersect."</td></tr>
+<tr><td><span class="cem">osspr:within</span></td><td>"The interior of one object is completely within the interior of the other object. Their boundaries may or may not intersect."</td></tr>
+<tr><td><span class="cem">swrc:affiliation</span></td><td>Mapping of organizations to affiliated entities (e.g. employees)</td></tr>
+<tr><td><span class="cem">lexinfo:partofspeech</span></td><td>"Term used to describe how a particular word is used in a sentence."</td></tr>
+<tr><td><span class="cem">gn:parentCountry</span></td><td>"parent country"</td></tr>
+<tr><td><span class="cem">tag:associatedTag</span></td><td>"The object is a Tag which plays a role in the subject Tagging."</td></tr>
 </tbody>
 </table>
 </small>
@@ -155,46 +157,46 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 
 <section>
 <h3>Calling Frank...</h3>
-<code>frank statements -p foaf:knows | grep last-fm | nt2gml > lastfm.gml</code>
+<code><span class="cem">frank statements -p foaf:knows | grep last-fm | nt2gml > lastfm.gml</span></code>
 </section>
 
 <section>
-<h3><em>foaf:knows</em> (Last.fm subset)</h3>
+<h3><span class="cem">foaf:knows</span> (Last.fm subset)</h3>
 <img class="plain stretch" src="img/v1.png"/>
 </section>
 
 <section>
-<h3><em>geop:hasBorderWith</em></h3>
+<h3><span class="cem">geop:hasBorderWith</span></h3>
 <img class="plain stretch" src="img/v3.png"/>
 </section>
 
 <section>
-<h3><em>osspr:contains</em></h3>
+<h3><span class="cem">osspr:contains</span></h3>
 <img class="plain stretch" src="img/v15.png"/>
 </section>
 
 <section>
-<h3><em>osspr:within</em></h3>
+<h3><span class="cem">osspr:within</span></h3>
 <img class="plain stretch" src="img/v16.png"/>
 </section>
 
 <section>
-<h3><em>swrc:affiliation</em></h3>
+<h3><span class="cem">swrc:affiliation</span></h3>
 <img class="plain stretch" src="img/v12.png"/>
 </section>
 
 <section>
-<h3><em>lexinfo:partOfSpeech</em></h3>
+<h3><span class="cem">lexinfo:partOfSpeech</span></h3>
 <img class="plain stretch" src="img/v14.png"/>
 </section>
 
 <section>
-<h3><em>gn:parentCountry</em></h3>
+<h3><span class="cem">gn:parentCountry</span></h3>
 <img class="plain stretch" src="img/v2.png"/>
 </section>
 
 <section>
-<h3><em>tag:associatedTag</em></h3>
+<h3><span class="cem">tag:associatedTag</span></h3>
 <img class="plain stretch" src="img/v17.png"/>
 </section>
 
@@ -202,18 +204,18 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <h3>Visualizations</h3>
 <table class="shrink"><tbody>
 <tr>
-<td><em>foaf:knows</em> (Last.fm subset)<br/><img class="plain vis" src="img/v1.png" alt=""/></td>
-<td><em>geop:hasBorderWith</em><br/><img class="plain vis" src="img/v3.png" alt=""/></td>
-<td><em>osspr:contains</em><br/><img class="plain vis" src="img/v15.png" alt=""/></td>
+<td><span class="cem">foaf:knows</span> (Last.fm subset)<br/><img class="plain vis" src="img/v1.png" alt=""/></td>
+<td><span class="cem">geop:hasBorderWith</span><br/><img class="plain vis" src="img/v3.png" alt=""/></td>
+<td><span class="cem">osspr:contains</span><br/><img class="plain vis" src="img/v15.png" alt=""/></td>
 </tr>
 <tr>
-<td><em>osspr:within</em><br/><img class="plain vis" src="img/v16.png" alt=""/></td>
-<td><em>swrc:affiliation</em><br/><img class="plain vis" src="img/v12.png" alt=""/></td>
-<td><em>lexinfo:partOfSpeech</em><br/><img class="plain vis" src="img/v14.png" alt=""/></td>
+<td><span class="cem">osspr:within</span><br/><img class="plain vis" src="img/v16.png" alt=""/></td>
+<td><span class="cem">swrc:affiliation</span><br/><img class="plain vis" src="img/v12.png" alt=""/></td>
+<td><span class="cem">lexinfo:partOfSpeech</span><br/><img class="plain vis" src="img/v14.png" alt=""/></td>
 </tr>
 <tr>
-<td><em>gn:parentCountry</em><br/><img class="plain vis" src="img/v2.png" alt=""/></td>
-<td><em>tag:associatedTag</em><br/><img class="plain vis" src="img/v17.png" alt=""/></td>
+<td><span class="cem">gn:parentCountry</span><br/><img class="plain vis" src="img/v2.png" alt=""/></td>
+<td><span class="cem">tag:associatedTag</span><br/><img class="plain vis" src="img/v17.png" alt=""/></td>
 <td></td>
 </tr>
 </tbody></table>
@@ -223,18 +225,18 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <h3>Visualizations: SKOS</h3>
 <table class="shrink"><tbody>
 <tr>
-<td><em>skos:related</em><br/><img class="plain vis" src="img/v4.png" alt=""/></td>
-<td><em>skos:narrower</em><br/><img class="plain vis" src="img/v5.png" alt=""/></td>
-<td><em>skos:relatedMatch</em><br/><img class="plain vis" src="img/v10.png" alt=""/></td>
+<td><span class="cem">skos:related</span><br/><img class="plain vis" src="img/v4.png" alt=""/></td>
+<td><span class="cem">skos:narrower</span><br/><img class="plain vis" src="img/v5.png" alt=""/></td>
+<td><span class="cem">skos:relatedMatch</span><br/><img class="plain vis" src="img/v10.png" alt=""/></td>
 </tr>
 <tr>
-<td><em>skos:broadMatch</em><br/><img class="plain vis" src="img/v7.png" alt=""/></td>
-<td><em>skos:narrowMatch</em><br/><img class="plain vis" src="img/v8.png" alt=""/></td>
-<td><em>skos:closeMatch</em><br/><img class="plain vis" src="img/v9.png" alt=""/></td>
+<td><span class="cem">skos:broadMatch</span><br/><img class="plain vis" src="img/v7.png" alt=""/></td>
+<td><span class="cem">skos:narrowMatch</span><br/><img class="plain vis" src="img/v8.png" alt=""/></td>
+<td><span class="cem">skos:closeMatch</span><br/><img class="plain vis" src="img/v9.png" alt=""/></td>
 </tr>
 <tr>
-<td><em>skos:exactMatch</em><br/><img class="plain vis" src="img/v11.png" alt=""/></td>
-<td><em>skos:hasTopConcept</em><br/><img class="plain vis" src="img/v6.png" alt=""/></td>
+<td><span class="cem">skos:exactMatch</span><br/><img class="plain vis" src="img/v11.png" alt=""/></td>
+<td><span class="cem">skos:hasTopConcept</span><br/><img class="plain vis" src="img/v6.png" alt=""/></td>
 <td></td>
 </tr>
 </tbody></table>
@@ -252,119 +254,119 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <th>Size Class</th>
 </tr>
 <tr>
-<td><em>foaf:knows</em></td>
+<td><span class="cem">foaf:knows</span></td>
 <td class="alignright">421</td>
 <td class="alignright">1776554</td>
 <td class="alignright">2374275</td>
 <td class="red">Large</td>
 </tr>
 <tr>
-<td><em>foaf:knows</em> (Last.fm)</td>
+<td><span class="cem">foaf:knows</span> (Last.fm)</td>
 <td class="alignright">310</td>
 <td class="alignright">315765</td>
 <td class="alignright">469361</td>
 <td class="red">Large</td>
 </tr>
 <tr>
-<td><em>geop:hasBorderWith</em></td>
+<td><span class="cem">geop:hasBorderWith</span></td>
 <td class="alignright">13</td>
 <td class="alignright">132</td>
 <td class="alignright">229</td>
 <td class="green">Small</td>
 </tr>
 <tr>
-<td><em>osspr:contains</em></td>
+<td><span class="cem">osspr:contains</span></td>
 <td class="alignright">94</td>
 <td class="alignright">7736</td>
 <td class="alignright">10098</td>
 <td class="amber">Medium</td>
 </tr>
 <tr>
-<td><em>osspr:within</em></td>
+<td><span class="cem">osspr:within</span></td>
 <td class="alignright">26</td>
 <td class="alignright">16623</td>
 <td class="alignright">28544</td>
 <td class="amber">Medium</td>
 </tr>
 <tr>
-<td><em>swrc:affiliation</em></td>
+<td><span class="cem">swrc:affiliation</span></td>
 <td class="alignright">508</td>
 <td class="alignright">12860</td>
 <td class="alignright">12366</td>
 <td class="amber">Medium</td>
 </tr>
 <tr>
-<td><em>lexinfo:partOfSpeech</em></td>
+<td><span class="cem">lexinfo:partOfSpeech</span></td>
 <td class="alignright">10</td>
 <td class="alignright">60700</td>
 <td class="alignright">60678</td>
 <td class="amber">Medium</td>
 </tr>
 <tr>
-<td><em>gn:parentCountry</em></td>
+<td><span class="cem">gn:parentCountry</span></td>
 <td class="alignright">14</td>
 <td class="alignright">197117</td>
 <td class="alignright">197115</td>
 <td class="red">Large</td>
 </tr>
 <tr>
-<td><em>tag:associatedTag</em></td>
+<td><span class="cem">tag:associatedTag</span></td>
 <td class="alignright">328</td>
 <td class="alignright">27469</td>
 <td class="alignright">25670</td>
 <td class="amber">Medium</td>
 </tr>
 <tr>
-<td><em>skos:related</em></td>
+<td><span class="cem">skos:related</span></td>
 <td class="alignright">818</td>
 <td class="alignright">208076</td>
 <td class="alignright">300250</td>
 <td class="red">Large</td>
 </tr>
 <tr>
-<td><em>skos:narrower</em></td>
+<td><span class="cem">skos:narrower</span></td>
 <td class="alignright">5848</td>
 <td class="alignright">181261</td>
 <td class="alignright">169489</td>
 <td class="red">Large</td>
 </tr>
 <tr>
-<td><em>skos:relatedMatch</em></td>
+<td><span class="cem">skos:relatedMatch</span></td>
 <td class="alignright">395</td>
 <td class="alignright">33862</td>
 <td class="alignright">34546</td>
 <td class="amber">Medium</td>
 </tr>
 <tr>
-<td><em>skos:broadMatch</em></td>
+<td><span class="cem">skos:broadMatch</span></td>
 <td class="alignright">45</td>
 <td class="alignright">9304</td>
 <td class="alignright">7207</td>
 <td class="green">Small</td>
 </tr>
 <tr>
-<td><em>skos:narrowMatch</em></td>
+<td><span class="cem">skos:narrowMatch</span></td>
 <td class="alignright">42</td>
 <td class="alignright">1807</td>
 <td class="alignright">1338</td>
 <td class="green">Small</td>
 </tr>
 <tr>
-<td><em>skos:closeMatch</em></td>
+<td><span class="cem">skos:closeMatch</span></td>
 <td class="alignright">419</td>
 <td class="alignright">328877</td>
 <td class="alignright">254703</td>
 <td class="red">Large</td>
 </tr>
 <tr>
-<td><em>skos:exactMatch</em></td>
+<td><span class="cem">skos:exactMatch</span></td>
 <td class="alignright">5901</td>
 <td class="alignright">263291</td>
 <td class="alignright">213306</td>
 <td class="red">Large</td>
 </tr>
 <tr>
-<td><em>skos:hasTopConcept</em></td>
+<td><span class="cem">skos:hasTopConcept</span></td>
 <td class="alignright">5854</td>
 <td class="alignright">26180</td>
 <td class="alignright">25304</td>
@@ -398,7 +400,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <th>Comp. size</th>
 </tr>
 <tr>
-<td><em>foaf:knows</em></td>
+<td><span class="cem">foaf:knows</span></td>
 <td class="red">Large</td>
 <td class="amber">2.673</td>
 <td class="amber">0.1017</td>
@@ -409,7 +411,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.7783</td>
 </tr>
 <tr>
-<td><em>foaf:knows</em> (Last.fm)</td>
+<td><span class="cem">foaf:knows</span> (Last.fm)</td>
 <td class="red">Large</td>
 <td class="amber">2.973</td>
 <td class="red">0.0932</td>
@@ -420,7 +422,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.9911</td>
 </tr>
 <tr>
-<td><em>geop:hasBorderWith</em></td>
+<td><span class="cem">geop:hasBorderWith</span></td>
 <td class="green">Small</td>
 <td class="red">3.470</td>
 <td class="amber">0.3920</td>
@@ -431,7 +433,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.6174</td>
 </tr>
 <tr>
-<td><em>osspr:contains</em></td>
+<td><span class="cem">osspr:contains</span></td>
 <td class="amber">Medium</td>
 <td class="amber">2.611</td>
 <td class="green">0.6667</td>
@@ -442,7 +444,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.7079</td>
 </tr>
 <tr>
-<td><em>osspr:within</em></td>
+<td><span class="cem">osspr:within</span></td>
 <td class="amber">Medium</td>
 <td class="red">3.434</td>
 <td class="green">0.6512</td>
@@ -453,7 +455,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.7286</td>
 </tr>
 <tr>
-<td><em>swrc:affiliation</em></td>
+<td><span class="cem">swrc:affiliation</span></td>
 <td class="amber">Medium</td>
 <td class="green">1.923</td>
 <td class="red">0.0</td>
@@ -464,7 +466,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.6845</td>
 </tr>
 <tr>
-<td><em>lexinfo:partOfSpeech</em></td>
+<td><span class="cem">lexinfo:partOfSpeech</span></td>
 <td class="amber">Medium</td>
 <td class="green">1.999</td>
 <td class="red">0.0</td>
@@ -475,7 +477,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.8949</td>
 </tr>
 <tr>
-<td><em>gn:parentCountry</em></td>
+<td><span class="cem">gn:parentCountry</span></td>
 <td class="red">Large</td>
 <td class="amber">2.000</td>
 <td class="red">0.0</td>
@@ -486,7 +488,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.9032</td>
 </tr>
 <tr>
-<td><em>tag:associatedTag</em></td>
+<td><span class="cem">tag:associatedTag</span></td>
 <td class="amber">Medium</td>
 <td class="green">1.869</td>
 <td class="red">0.0</td>
@@ -497,7 +499,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="green">0.3638</td>
 </tr>
 <tr>
-<td><em>skos:related</em></td>
+<td><span class="cem">skos:related</span></td>
 <td class="red">Large</td>
 <td class="amber">2.886</td>
 <td class="amber">0.2624</td>
@@ -508,7 +510,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="green">0.4862</td>
 </tr>
 <tr>
-<td><em>skos:narrower</em></td>
+<td><span class="cem">skos:narrower</span></td>
 <td class="red">Large</td>
 <td class="green">1.87</td>
 <td class="red">0.0304</td>
@@ -519,7 +521,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.7326</td>
 </tr>
 <tr>
-<td><em>skos:relatedMatch</em></td>
+<td><span class="cem">skos:relatedMatch</span></td>
 <td class="amber">Medium</td>
 <td class="amber">2.040</td>
 <td class="red">1.41E-04</td>
@@ -530,7 +532,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="red">0.5465</td>
 </tr>
 <tr>
-<td><em>skos:broadMatch</em></td>
+<td><span class="cem">skos:broadMatch</span></td>
 <td class="green">Small</td>
 <td class="green">1.549</td>
 <td class="red">0.0</td>
@@ -541,7 +543,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="green">0.3961</td>
 </tr>
 <tr>
-<td><em>skos:narrowMatch</em></td>
+<td><span class="cem">skos:narrowMatch</span></td>
 <td class="green">Small</td>
 <td class="green">1.481</td>
 <td class="red">0.0</td>
@@ -552,7 +554,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="green">0.2790</td>
 </tr>
 <tr>
-<td><em>skos:closeMatch</em></td>
+<td><span class="cem">skos:closeMatch</span></td>
 <td class="red">Large</td>
 <td class="green">1.549</td>
 <td class="red">2.14E-04</td>
@@ -563,7 +565,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="green">0.2620</td>
 </tr>
 <tr>
-<td><em>skos:exactMatch</em></td>
+<td><span class="cem">skos:exactMatch</span></td>
 <td class="red">Large</td>
 <td class="green">1.620</td>
 <td class="amber">0.0878</td>
@@ -574,7 +576,7 @@ author:1ec76...f4b foaf:name; "Jian Yu" .
 <td class="green">0.1940</td>
 </tr>
 <tr>
-<td><em>skos:hasTopConcept</em></td>
+<td><span class="cem">skos:hasTopConcept</span></td>
 <td class="amber">Medium</td>
 <td class="green">1.933</td>
 <td class="red">0.0</td>
